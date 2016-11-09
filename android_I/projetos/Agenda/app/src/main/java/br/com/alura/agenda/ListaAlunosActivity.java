@@ -80,7 +80,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
             site = "http://" + site;
         }
 
-        intentSite.setData(Uri.parse("http://www.google.com"));
+        intentSite.setData(Uri.parse(site));
         itemSite.setIntent(intentSite);
 
 
