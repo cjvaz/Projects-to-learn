@@ -18,7 +18,6 @@ import br.com.alura.agenda.dao.AlunoDAO;
  */
 
 public class SMSReceiver extends BroadcastReceiver {
-    @TargetApi(Build.VERSION_CODES.M)
     @Override
     public void onReceive(Context context, Intent intent) {
         Object[] pdus = (Object[]) intent.getSerializableExtra("pdus");
