@@ -16,10 +16,10 @@ public class AlunoConverter {
         try {
             json.object().key("list").array().object().key("aluno").array();
             for (Aluno aluno: alunos) {
-                json.object();
-                json.key("nome").value(aluno.getNome());
-                json.key("nota").value(aluno.getNota());
-                json.endObject();
+                json.object()
+                .key("nome").value(aluno.getNome())
+                .key("nota").value(aluno.getNota())
+                .endObject();
             }
             json.endArray().endObject().endArray().endObject();
         } catch (JSONException e) {
