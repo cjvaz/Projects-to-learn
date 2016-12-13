@@ -210,6 +210,9 @@ local.properties
 # Testing environment specific
 derby.log
 
+# eclipse
+.recommenders
+
 # ======= ANDROID ======#
 ---------
 # Built application files
