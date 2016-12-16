@@ -26,6 +26,23 @@ public class TestaCursoComAluno {
 		javaColecoes.getAlunos().forEach(aluno ->{
 			System.out.println(aluno);
 		});
+		
+		System.out.println("O alunos " + a1.getNome() + " está matriculado? ");
+		System.out.println(javaColecoes.estaMatriculado(a1));
+		
+		Aluno turini = new Aluno("Rodrigo Turini", 34672);
+		System.out.println("E esse Turini está matriculado? ");
+		System.out.println(javaColecoes.estaMatriculado(turini));
+		
+		System.out.println("O a1 é equals ao turini? ");
+		System.out.println(a1.equals(turini));
+		
+		// sobrescrevemos o metodo hascode na classe Aluno para o contains do set funcionar
+		
+		System.out.println(a1.hashCode() == turini.hashCode());
+		
+		// sempre mudar o equal mude o hashCode
+		
 
 	}
 
