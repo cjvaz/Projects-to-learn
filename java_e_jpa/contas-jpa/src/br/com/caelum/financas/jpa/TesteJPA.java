@@ -23,8 +23,8 @@ public class TesteJPA {
 		 * Usando HSQLDB
 		 */
 
-		 EntityManagerFactory emf = Persistence
-		 		.createEntityManagerFactory("contas-hsqldb");
+		 //EntityManagerFactory emf = Persistence
+		 //		.createEntityManagerFactory("contas-hsqldb");
 
 		/**
 		 * Usando PostgreSQL
@@ -35,8 +35,8 @@ public class TesteJPA {
 		/**
 		 * Usando MySQL
 		 */
-		//EntityManagerFactory emf = Persistence
-		//		.createEntityManagerFactory("contas-mysql");
+		EntityManagerFactory emf = Persistence
+				.createEntityManagerFactory("contas-mysql");
 
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
