@@ -14,7 +14,7 @@ public class TesteJPA {
 		Conta conta = new Conta();
 		conta.setTitular("João Ferreira");
 		conta.setBanco("HSBC");
-		conta.setNumbero("12345");
+		conta.setNumero("12345");
 		conta.setAgencia("321");
 				
 		EntityManager manager = new JPAUtil().getEntityManager();

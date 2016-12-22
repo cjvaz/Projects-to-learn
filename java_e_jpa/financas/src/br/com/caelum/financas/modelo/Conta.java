@@ -12,7 +12,7 @@ public class Conta {
 	private Integer id;
 	
 	private String titular;
-	private String numbero;
+	private String numero;
 	private String banco;
 	private String agencia;
 	
@@ -35,12 +35,12 @@ public class Conta {
 		this.id = id;
 	}
 	
-	public String getNumbero() {
-		return numbero;
+	public String getNumero() {
+		return numero;
 	}
 	
-	public void setNumbero(String numbero) {
-		this.numbero = numbero;
+	public void setNumero(String numbero) {
+		this.numero = numbero;
 	}
 	
 	public String getBanco() {
