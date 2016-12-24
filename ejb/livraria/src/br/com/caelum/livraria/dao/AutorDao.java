@@ -15,6 +15,7 @@ import br.com.caelum.livraria.modelo.Autor;
 
 @Stateless
 @TransactionManagement(TransactionManagementType.CONTAINER)
+//@Interceptors({LogInterceptador.class})
 public class AutorDao {
 
 	@PersistenceContext
