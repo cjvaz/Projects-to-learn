@@ -14,6 +14,14 @@ public class AutorBean {
 		return autor;
 	}
 
+	public void carregaPelaId() {
+	    Integer id = this.autor.getId();
+	    this.autor = new DAO<Autor>(Autor.class).buscaPorId(id);
+	    if (this.autor == null) {
+	            this.autor = new Autor();
+	    }
+	}
+	
 	public String gravar() {
 		System.out.println("Gravando autor " + this.autor.getNome());
 
@@ -23,4 +31,6 @@ public class AutorBean {
 
 		return "livro?faces-redirect=true";
 	}
+	
+	
 }
