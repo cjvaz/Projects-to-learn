@@ -61,6 +61,7 @@
 					<h:outputText value="#{autor.nome}" />
 				</h:column>
 			</h:dataTable>
+			<h:commandLink value="Cadastrar novo autor" action="#{livroBean.formAutor}" immediate="true"/>
 		</fieldset>
 
 		<h:commandButton value="Gravar" action="#{livroBean.gravar}">

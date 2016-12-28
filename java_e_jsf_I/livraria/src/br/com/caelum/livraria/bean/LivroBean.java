@@ -70,5 +70,10 @@ public class LivroBean implements Serializable {
         if (!valor.startsWith("1")) {
             throw new ValidatorException(new FacesMessage("Deveria começar com 1"));
         }
-    }    
+    }
+    
+    public String formAutor() {
+        System.out.println("Chamanda o formulario do Autor");
+        return "autor?faces-redirect=true";
+    }   
 }
