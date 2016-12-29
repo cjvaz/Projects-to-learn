@@ -10,7 +10,10 @@
 		<div id="cabecalho">
 			<div>
 				<h:graphicImage library="img" name="logo.png" />
-				<span>Usuario logado: <h:outputText value="#{sessionScope['usuarioLogado'].email}" /></span>
+				<h:form rendered="#{usuarioLogado != null}">
+					<span>Usuario logado: <h:outputText value="#{sessionScope['usuarioLogado'].email}" /></span>
+					<h:commandLink value="Logout" action="#{loginBean.deslogar}" />
+				</h:form>
 			</div>
 			<h1>
 				<ui:insert name="titulo"></ui:insert>
