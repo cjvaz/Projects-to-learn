@@ -55,7 +55,13 @@ public class ClienteTest {
         Entity<String> entity = Entity.entity(xml, MediaType.APPLICATION_XML);
 
         Response response = target.path("/carrinhos").request().post(entity);
-        Assert.assertEquals("<status>sucesso</status>", response.readEntity(String.class));        
+        Assert.assertEquals(201, response.getStatus());
+        // teste interessante, nao importa qual é o location, ou vou seguir
+        // e verificar se os dados foram gravados corretamente, faço isso
+        // verificando um item.
+        String location = response.getHeaderString("Location");
+        String conteudo = client.target(location).request().get(String.class);
+        Assert.assertTrue(conteudo.contains("Tablet"));
 	}
 
 }
