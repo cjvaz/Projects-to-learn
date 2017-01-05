@@ -12,45 +12,11 @@ public class OrdenaString {
 		palavras.add("alura online");
 		palavras.add("casa do código");
 		palavras.add("caelum");
-		
-		//******
-		Collections.sort(palavras);
-		System.out.println(palavras);
-		
-		//Comparator<String> comparador = new ComparadorDeStringPorTamanho();
-		//Collections.sort(palavras, comparador); <- antes do java 8
-		
-		//******
-		Comparator<String> comparador = new ComparadorDeStringPorTamanho();
-		palavras.sort(comparador);
-		System.out.println(palavras);
-		
-		//******
-		Consumer<String> consumidor = new ConsumidorDeString();
-		palavras.forEach(consumidor);
-		
-		//******
-		palavras.forEach(new Consumer<String>(){
-		    public void accept(String palavra) {
-		        System.out.println(palavra);
-		    }
-		});		
+			
+		palavras.forEach(System.out::println);
+		palavras.forEach(s -> System.out.println(s));
+
 	}
+	
 
-}
-
-class ComparadorDeStringPorTamanho implements Comparator<String> {
-    public int compare(String s1, String s2) {
-        if(s1.length() < s2.length()) 
-            return -1;
-        if(s1.length() > s2.length()) 
-            return 1;
-        return 0;
-    }
-}
-
-class ConsumidorDeString implements Consumer<String> {
-    public void accept(String s) {
-        System.out.println(s);
-    }
 }
