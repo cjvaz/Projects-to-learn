@@ -14,3 +14,11 @@ export const search = () => {
     payload: request
   }
 }
+
+export const add = (description) => {
+  const request = axios.post(URL, { description }) // es6, se tiver variavel com o mesmo nome ele atribui
+  return {
+    type: 'TODO_ADDED',
+    payload: request
+  }
+}
