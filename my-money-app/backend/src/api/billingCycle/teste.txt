@@ -1,0 +1,68 @@
+[
+  {
+    "_id": "58ca377e14f1010a73e011e5",
+    "name": "Janeiro/17",
+    "month": 1,
+    "year": 2017,
+    "__v": 0,
+    "debts": [
+      {
+        "name": "Telefone",
+        "value": 89.56,
+        "status": "PAGO",
+        "_id": "58ca377e14f1010a73e011e7"
+      },
+      {
+        "name": "Condominio",
+        "value": 720,
+        "status": "AGENDADO",
+        "_id": "58ca377e14f1010a73e011e6"
+      }
+    ],
+    "credits": [
+      {
+        "name": "Salario Empresa",
+        "value": 6500,
+        "_id": "58ca377e14f1010a73e011e9"
+      },
+      {
+        "name": "Salario Professor",
+        "value": 2700,
+        "_id": "58ca377e14f1010a73e011e8"
+      }
+    ]
+  },
+  {
+    "_id": "58ca389895f1330f2f897ab1",
+    "name": "Fevereiro/17",
+    "month": 2,
+    "year": 2017,
+    "__v": 0,
+    "debts": [
+      {
+        "name": "Telefone",
+        "value": 89.56,
+        "status": "PAGO",
+        "_id": "58ca389895f1330f2f897ab3"
+      },
+      {
+        "name": "Condominio",
+        "value": 720,
+        "status": "AGENDADO",
+        "_id": "58ca389895f1330f2f897ab2"
+      }
+    ],
+    "credits": [
+      {
+        "name": "Salario Empresa",
+        "value": 6500,
+        "_id": "58ca389895f1330f2f897ab5"
+      },
+      {
+        "name": "Salario Professor",
+        "value": 2700,
+        "_id": "58ca389895f1330f2f897ab4"
+      }
+    ]
+  }
+]
