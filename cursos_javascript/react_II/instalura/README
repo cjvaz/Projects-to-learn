@@ -1,0 +1,12 @@
+Entrar no prompt do mysql
+$ mysql -h 127.0.0.1 -u root -p
+
+Inicializar a aplicação java
+$ java -jar -Dspring.datasource.password=root instalura.jar
+
+Usuários e senhas
+  usuário = alots, senha = 123456;
+  usuário = rafael, senha = 123456;
+  usuário = vitori, senha = 123456
+
+
