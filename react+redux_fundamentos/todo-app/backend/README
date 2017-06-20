@@ -1,0 +1,6 @@
+npm run dev
+npm run production
+
+monitorar
+./node_modules/.bin/pm2 status
+./node_modules/.bin/pm2 monit
