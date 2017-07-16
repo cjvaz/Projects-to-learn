@@ -8,11 +8,18 @@ const estilos = {
     height: 60,
     width: 60
   },
+  estiloTexto2: {
+    fontSize: 30,
+    backgroundColor: '#2A48FA',
+    height: 60,
+    width: 60
+  },
   estiloView: {
     backgroundColor: 'skyblue',
     height: 300,
     justifyContent: 'center',
-    alignItems: 'flex-end'
+    alignItems: 'center',
+    flexDirection: 'column'
   }
 };
 
@@ -20,7 +27,8 @@ export default class app2 extends Component {
   render() {
     return (
       <View style={estilos.estiloView}>
-        <Text style={estilos.estiloTexto}></Text>
+        <Text style={estilos.estiloTexto}>A</Text>
+        <Text style={estilos.estiloTexto2}>B</Text>
       </View>
     );
   }
