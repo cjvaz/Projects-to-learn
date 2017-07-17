@@ -8,6 +8,9 @@ import {
   StyleSheet
 } from 'react-native';
 
+import Topo from './src/components/topo';
+import Icone from './src/components/icone';
+
 export default class app3 extends Component {
 
   constructor(props) {
@@ -76,7 +79,7 @@ export default class app3 extends Component {
   render() {
     return (
       <View>
-        
+
         <Topo />
 
         <View style={styles.painelAcoes}>
@@ -90,63 +93,15 @@ export default class app3 extends Component {
             <Button title="tesoura" onPress={() => { this.jokenpo('tesoura') }} />
           </View>
         </View>
-       
+
         <View style={styles.palco}>
           <Text style={styles.txtResultado}>{this.state.resultado}</Text>
-          <Icone escolha={this.state.escolhaComputador} jogador='Computador'></Icone>         
+          <Icone escolha={this.state.escolhaComputador} jogador='Computador'></Icone>
           <Icone escolha={this.state.escolhaUsuario} jogador='Você'></Icone>
         </View>
 
       </View>
     );
-  }
-}
-
-class Topo extends Component {
-  render() {
-    return (
-      <View>
-        <Image source={require('./imgs/jokenpo.png')} />
-      </View>
-    );
-  }
-}
-
-class Icone extends Component {
-  render() {
-
-    //this.props.escolha
-    //this.props.jogador
-
-    if (this.props.escolha === 'pedra') {
-
-      return (
-        <View style={styles.icone}>
-          <Text style={styles.txtJogador}>{this.props.jogador}</Text>
-          <Image source={require('./imgs/pedra.png')} />
-        </View>
-      );
-
-    } else if (this.props.escolha === 'papel') {
-      return (
-        <View style={styles.icone}>
-          <Text style={styles.txtJogador}>{this.props.jogador}</Text>
-          <Image source={require('./imgs/papel.png')} />
-        </View>
-      );
-
-    } else if (this.props.escolha === 'tesoura') {
-      return (
-        <View style={styles.icone}>
-          <Text style={styles.txtJogador}>{this.props.jogador}</Text>
-          <Image source={require('./imgs/tesoura.png')} />
-        </View>
-      );
-
-    } else {
-      return false;
-    }
-
   }
 }
 
@@ -168,13 +123,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'red',
     height: 60
-  },
-  icone: {
-    alignItems: 'center',
-    marginBottom: 20
-  },
-  txtJogador: {
-    fontSize: 18
   }
 });
 
