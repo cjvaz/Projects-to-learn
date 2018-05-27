@@ -7,12 +7,23 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { AngularFireModule, FirebaseAppConfig } from 'angularfire2';
+
+const firebaseAppConfig: FirebaseAppConfig = {
+  apiKey: "AIzaSyBXGsDvaR5SUaOVAMJJ9sXvOm76HHX4-PQ",
+  authDomain: "ionic-firebase-chat-8d674.firebaseapp.com",
+  databaseURL: "https://ionic-firebase-chat-8d674.firebaseio.com",
+  storageBucket: "ionic-firebase-chat-8d674.appspot.com",
+  messagingSenderId: "38590730926"
+}
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage
   ],
   imports: [
+    AngularFireModule.initializeApp(firebaseAppConfig),
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
