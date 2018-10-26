@@ -1,7 +1,7 @@
 "use strict";
 
-const map = () => {
-  return [1, 2];
+const map = arr => {
+  return arr;
 };
 
 export default map;
