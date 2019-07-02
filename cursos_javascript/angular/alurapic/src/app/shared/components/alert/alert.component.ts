@@ -25,7 +25,7 @@ export class AlertComponent {
       });
   }
 
-  removeAlert(alert: Alert) {
+  removeAlert(alertToRemove: Alert) {
     this.alerts = this.alerts.filter(alert => alert !== alertToRemove);
   }
 
