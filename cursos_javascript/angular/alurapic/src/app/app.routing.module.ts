@@ -35,8 +35,12 @@ const routes = [
     component: PhotoDetailsComponent,
   },
   {
-    path: '**',
+    path: 'not-found',
     component: NotFoundComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'not-found'
   }
 ];
 
