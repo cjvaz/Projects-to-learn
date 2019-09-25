@@ -17,11 +17,9 @@ store.dispatch({ type: 'INCREMENT'});
 console.log(store.getState());
 
 store.subscribe(() => {
-  console.log('disparou uma ação!');
+  console.log('disparou uma ação!', store.getState());
 })
 
 store.dispatch({ type: 'INCREMENT'});
-console.log(store.getState());
 
 store.dispatch({ type: 'DECREMENT'});
-console.log(store.getState());
