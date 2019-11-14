@@ -1,0 +1,24 @@
+Dicas antes de criar uma nova pergunta
+Obrigado pela atenção até aqui. Para finalizar esta introdução, deixo aqui as dicas mencionadas no vídeo anterior com os links, para você nos ajudar tentando solucionar possíveis dúvidas antes de criar uma nova pergunta:
+
+1) Verifique as perguntas existentes para aquela aula
+
+2) Consulte a página de perguntas frequentes do curso
+
+http://educandoweb.com.br/duvidas-sbi.html
+
+3) Compare seu código fonte com o projeto do professor no Github
+
+Back end:
+
+https://github.com/acenelio/springboot2-ionic-backend (Spring Boot versão 2.0.x)
+https://github.com/acenelio/spring-boot-ionic-backend (Spring Boot versão 1.5.x)
+
+Front end:
+
+https://github.com/acenelio/curso-spring-ionic-frontend
+
+4) Oportunidade de crescimento profissional: investigue o erro
+
+Leia as mensagens de erro / nomes das exceções
+Web / Stackoverflow
