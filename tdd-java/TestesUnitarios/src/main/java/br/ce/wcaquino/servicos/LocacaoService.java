@@ -25,25 +25,10 @@ public class LocacaoService {
 		dataEntrega = adicionarDias(dataEntrega, 1);
 		locacao.setDataRetorno(dataEntrega);
 		
-		//Salvando a locacao...	
+		//Salvando a locacao...
 		//TODO adicionar método para salvar
-		
+
 		return locacao;
 	}
 
-	@Test
-	public void test() {
-		//cenario
-		LocacaoService service = new LocacaoService();
-		Usuario usuario = new Usuario("Usuario 1");
-		Filme filme = new Filme("Filme 1", 2, 5.0);
-
-		//acao
-		Locacao locacao = service.alugarFilme(usuario, filme);
-
-		//verificacao
-		Assert.assertTrue(locacao.getValor() == 5.0);
-		Assert.assertTrue(DataUtils.isMesmaData(locacao.getDataLocacao(), new Date()));
-		Assert.assertTrue(DataUtils.isMesmaData(locacao.getDataRetorno(), DataUtils.obterDataComDiferencaDias(1)));
-	}
 }
