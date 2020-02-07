@@ -1,0 +1,62 @@
+# Directories #
+bin/
+libs/
+tmp/
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+### linux te files ###
+*~
+
+### OS Files ###
+.DS_Store
+
+### IntelliJ ###
+*.iml
+*.ipr
+*.iws
+.idea
+.settings
+
+### Eclipse ###
+.project
+.metadata
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.tern-project
+
+### NetBeans ###
+nbproject/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+### Maven ###
+target/
+
+### Gradle ###
+.gradle
+*.log
+
+### Git ###
+*.orig
